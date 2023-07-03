@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua|Sniglet');
+/*reset*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin:0;
+}
+a{text-decoration:none;}
+ 
+/*fonts*/ 
+body{font-family: 'Sniglet', cursive;}
+strong{font-family: 'Uncial Antiqua', cursive;font-size:1.4em;}
+.titulo{font-size:2em;text-align:center;}
+/*skin*/ 
+.titulo {background:#dedede;}
+.producto a {border:2px solid #ccc;border-radius:5px;}
+a {color:#333;}
+	
+/*layout*/   
+.titulo, .producto {padding:15px;} 
+.titulo strong{display:block;margin:10px 0;}
+ .producto span {display:block;} 
+.producto a {display:block;padding:8px;text-align:center;}
+.producto span {font-size:25px;} 
+ 
+
+
+/*layout responsive*/
+.producto img{width:100%;height:auto;}
+
+@media only screen and (min-width:767px){
+	
+	.catalogo{overflow:hidden;}
+	.producto{float:left;width:25%;}
+	
+	.producto span {
+		display:block;
+		overflow:hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+	}
+	
+}
+
+
+@media only screen and (min-width:1024px){
+	
+	.producto {width:33.333%;}
+	.catalogo {margin-left:300px;}
+	.titulo{position:fixed;top:15px;left:15px;  width:285px;   }
+} 
