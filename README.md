@@ -1,1 +1,1 @@
-# Loja2
+# Loja
